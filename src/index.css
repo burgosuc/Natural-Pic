@@ -1,0 +1,81 @@
+:root {
+  font-family: "Inconsolata", monospace;
+  font-weight: 300;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1 {
+  margin-bottom: 0;
+  text-align: center;
+  font-family: "Inconsolata", monospace;
+  font-weight: 500;
+}
+span {
+  color: black;
+  font-family: "Inconsolata", monospace;
+  font-weight: 500;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: #045c3f;
+  padding: 20px;
+  color: white;
+  gap: 10px;
+  font-family: "Inconsolata", monospace;
+  font-weight: 500;
+}
+.gallery {
+  display: grid;
+  gap: 20px;
+}
+.grid-columns-5 {
+  grid-template-columns: repeat(5, 1fr);
+  align-content: center;
+}
+.grid-columns-4 {
+  grid-template-columns: repeat(4, 1fr);
+  align-content: center;
+}
+.gallery .photo {
+  cursor: pointer;
+  padding: 10px 10px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  text-shadow: 0px 0px 15px black;
+  font-family: "Inconsolata", monospace;
+  font-weight: 500;
+  font-size: 15px;
+}
+.gallery .photo:hover {
+  box-shadow: 0px 0px 2px 1px rgb(224, 8, 8);
+  border-radius: 10px;
+}
+.gallery .photo svg {
+  align-self: flex-end;
+}
+.p-3 {
+  padding: 30px;
+}
